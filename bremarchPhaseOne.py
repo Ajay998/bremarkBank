@@ -633,8 +633,8 @@ def finalize_target_market():
     print("an untapped market with growth potential in credit card adoption.")
 
 def main():
-    """Main function to run the complete AtliQo Bank analysis"""
-    print("ATLIQO BANK CREDIT CARD LAUNCH ANALYSIS")
+    """Main function to run the complete BREMARK Bank analysis"""
+    print("BREMARK BANK CREDIT CARD LAUNCH ANALYSIS")
     print("="*70)
     
     # Data loading
@@ -644,7 +644,7 @@ def main():
     df_cust = explore_customers_data(df_cust)
     df_cust, occupation_wise_inc_median = handle_income_null_values(df_cust)
     df_cust = detect_and_treat_income_outliers(df_cust, occupation_wise_inc_median)
-    visualize_income_analysis(df_cust)
+    # visualize_income_analysis(df_cust)
     
     df_cust = handle_age_outliers(df_cust)
     df_cust = create_age_groups(df_cust)
